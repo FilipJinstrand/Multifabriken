@@ -104,5 +104,11 @@ namespace Multifabriken
                 }
             }
         }
+
+        public void ReceiptMilk()
+        {
+            Console.WriteLine("Du har beställt: ");
+            Console.WriteLine(Size + "mjölk med " + Content + "% fetthalt.");
+        }
     }
 }

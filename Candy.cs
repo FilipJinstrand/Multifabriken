@@ -94,8 +94,7 @@ namespace Multifabriken
 
         public void ReceiptCandy()
         {
-            Console.Clear();
-            Console.WriteLine("Du har nu beställt:");
+            Console.WriteLine("Du har beställt:");
             Console.WriteLine(Volume + "kg av " + Type);
         }
     }
