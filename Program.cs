@@ -118,9 +118,9 @@ namespace Multifabriken
                 candiesList[i].ReceiptCandy();
                 Console.WriteLine("********************");
             }
-            for (int i = 0; i < cars.Count; i++)
+            for (int i = 0; i < oatMilk.Count; i++)
             {
-                cars[i].RecieptCar();
+                oatMilk[i].ReceiptMilk();
                 Console.WriteLine("********************");
             }
             for (int i = 0; i < pipes.Count; i++)
