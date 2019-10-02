@@ -109,7 +109,7 @@ namespace Multifabriken
         public void ReceiptMilk()
         {
             Console.WriteLine("Du har beställt: ");
-            Console.WriteLine(Size + "mjölk med " + Content + "% fetthalt.");
+            Console.WriteLine(Size + " liter mjölk med " + Content + "% fetthalt.");
         }
     }
 }
