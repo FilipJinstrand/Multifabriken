@@ -57,7 +57,6 @@ namespace Multifabriken
                 Console.WriteLine("[" + number + "] " + candies[i]);
             }
 
-            Console.Clear();
             Console.WriteLine("Välj vilken sort du vill beställa:");
 
             int menuChoice = Convert.ToInt32(Console.ReadLine());
@@ -86,6 +85,7 @@ namespace Multifabriken
 
         public void ChooseVolume()
         {
+            Console.Clear();
             Console.Write("Skriv in hur många kilo godis du vill beställa: ");
             int input = Convert.ToInt32(Console.ReadLine());
 
