@@ -106,10 +106,10 @@ namespace Multifabriken
             Diamater = answer;
         }
 
-        private void RecieptPipe(){
-            Console.Clear();
+        public void RecieptPipe(){
+            //Console.Clear();
 
-            Console.WriteLine("Du har nu beställt ett rör med:");
+            Console.WriteLine("Du har beställt ett rör med:");
             Console.WriteLine("Typ: " + Type);
             Console.WriteLine("Längd: " + Length + " M");
             Console.WriteLine("Diameter: " + Diamater + " M");
