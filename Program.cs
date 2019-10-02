@@ -61,7 +61,6 @@ namespace Multifabriken
                     Console.WriteLine("\n - Bilbeställning -");
                     Console.WriteLine(" ");
                     Car car = new Car();
-                    car.ChooseModel();
                     break;
 
                 case 2:
