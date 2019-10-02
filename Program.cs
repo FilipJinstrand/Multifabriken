@@ -1,11 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Multifabriken
 {
     class Program
     {
+        public static List<Car> cars = new List<Car>();
+        public static List<Candy> candiesList = new List<Candy>();
+        public static List<Pipe> pipes = new List<Pipe>();
+        //public static List<Car> cars = new List<Car>();
+
         static void Main(string[] args)
         {
+
             bool fabric = true;
 
             while (fabric)
@@ -30,6 +37,7 @@ namespace Multifabriken
                         break;
 
                     case 2:
+                        PrintReciept();
                         break;
 
                     case 0:
@@ -61,6 +69,7 @@ namespace Multifabriken
                     Console.WriteLine("\n - Bilbeställning -");
                     Console.WriteLine(" ");
                     Car car = new Car();
+                    cars.Add(car);
                     break;
 
                 case 2:
@@ -68,6 +77,7 @@ namespace Multifabriken
                     Console.WriteLine("\n - Godisbeställning -");
                     Console.WriteLine(" ");
                     Candy candies = new Candy();
+                    candiesList.Add(candies);
                     break;
 
                 case 3:
@@ -81,12 +91,24 @@ namespace Multifabriken
                     Console.WriteLine("\n - Rörbeställning -");
                     Console.WriteLine(" ");
                     Pipe pipe = new Pipe();
+                    pipes.Add(pipe);
                     break;
 
                 default:
                     Console.WriteLine("Felaktig inmatning");
                     break;
 
+            }
+
+
+        }
+
+        static public void PrintReciept()
+        {
+            for (int i = 0; i < cars.Count; i++)
+            {
+                cars[i].RecieptCar();
+                Console.WriteLine("********************");
             }
         }
     }
