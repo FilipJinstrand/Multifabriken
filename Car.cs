@@ -113,7 +113,14 @@ namespace Multifabriken
             Console.WriteLine("Du har beställt en bil med");
             Console.WriteLine("Model: " + Model);
             Console.WriteLine("Färg: " + Color);
-            Console.WriteLine("Lyx: " + Lyx);
+            if (Lyx == true)
+            {
+                Console.WriteLine("Lyx: Ja");
+            }
+            else
+            {
+                Console.WriteLine("Lyx: Nej");
+            }
         }
     }
 }
