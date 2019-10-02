@@ -110,7 +110,7 @@ namespace Multifabriken
         }
 
         public void RecieptCar(){
-            Console.WriteLine("Du har nu beställt en bil med");
+            Console.WriteLine("Du har beställt en bil med");
             Console.WriteLine("Model: " + Model);
             Console.WriteLine("Färg: " + Color);
             Console.WriteLine("Lyx: " + Lyx);

@@ -8,7 +8,7 @@ namespace Multifabriken
         public static List<Car> cars = new List<Car>();
         public static List<Candy> candiesList = new List<Candy>();
         public static List<Pipe> pipes = new List<Pipe>();
-        //public static List<Car> cars = new List<Car>();
+        public static List<Milk> oatMilk = new List<Milk>();
 
         static void Main(string[] args)
         {
@@ -84,6 +84,8 @@ namespace Multifabriken
                     Console.Clear();
                     Console.WriteLine("\n - Havremjölksbeställning -");
                     Console.WriteLine(" ");
+                    Milk milk = new Milk();
+                    oatMilk.Add(milk);
                     break;
 
                 case 4:
@@ -108,6 +110,22 @@ namespace Multifabriken
             for (int i = 0; i < cars.Count; i++)
             {
                 cars[i].RecieptCar();
+                Console.WriteLine("********************");
+            }
+
+            for (int i = 0; i < candiesList.Count; i++)
+            {
+                candiesList[i].ReceiptCandy();
+                Console.WriteLine("********************");
+            }
+            for (int i = 0; i < cars.Count; i++)
+            {
+                cars[i].RecieptCar();
+                Console.WriteLine("********************");
+            }
+            for (int i = 0; i < pipes.Count; i++)
+            {
+                pipes[i].RecieptPipe();
                 Console.WriteLine("********************");
             }
         }
