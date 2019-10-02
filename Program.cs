@@ -80,6 +80,7 @@ namespace Multifabriken
                     Console.Clear();
                     Console.WriteLine("\n - Rörbeställning -");
                     Console.WriteLine(" ");
+                    Pipe pipe = new Pipe();
                     break;
 
                 default:
