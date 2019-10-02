@@ -43,6 +43,7 @@ namespace Multifabriken
 
             ChooseSize();
             ChooseContent();
+            ReceiptMilk();
 
         }
 
