@@ -47,6 +47,7 @@ namespace Multifabriken
             ChooseType();
             ChooseLength();
             ChooseDiameter();
+            RecieptPipe();
         }
 
         private void ChooseType(){
@@ -107,11 +108,11 @@ namespace Multifabriken
 
         private void RecieptPipe(){
             Console.Clear();
-            
+
             Console.WriteLine("Du har nu beställt ett rör med:");
             Console.WriteLine("Typ: " + Type);
             Console.WriteLine("Längd: " + Length + " M");
-            Console.WriteLine("Diameter: " + Diamater + "M");
+            Console.WriteLine("Diameter: " + Diamater + " M");
         }
 
     }
