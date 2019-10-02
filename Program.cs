@@ -67,6 +67,7 @@ namespace Multifabriken
                     Console.Clear();
                     Console.WriteLine("\n - Godisbeställning -");
                     Console.WriteLine(" ");
+                    Candy candies = new Candy();
                     break;
 
                 case 3:
