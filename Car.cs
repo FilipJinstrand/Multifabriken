@@ -18,7 +18,7 @@ namespace Multifabriken
                 return model;
             }
             set{
-                model = Model;
+                model = value;
             }
         }
 
@@ -27,7 +27,7 @@ namespace Multifabriken
                 return color;
             }
             set{
-                model = Color;
+                color = value;
             }
         }
 
@@ -36,12 +36,11 @@ namespace Multifabriken
                 return lyx;
             }
             set{
-                lyx = Lyx;
+                lyx = value;
             }
         }
         
         public Car(){
-            
             models.Add("Volvo");
             models.Add("BMW");
             models.Add("Audi");
